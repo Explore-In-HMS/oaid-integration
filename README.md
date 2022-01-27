@@ -1,10 +1,7 @@
 # HMS ve OAID İşlemleri
 OAID ile üçüncü parti takip platformları entegrasyonu ve panel işlemleri ile kullanıcı aksiyonları takip işlemleri
 
-<hr>
-
-</br>
-</br>
+<br>
 
 ## **Başlamadan Önce**
 
@@ -34,16 +31,16 @@ HMS (Huawei Mobil Servisleri) kullanan tüm cihazlarda OAID kolay bir şekilde e
 <hr>
 
 ## **HMS & Adjust**
-1. Client Taraflı İşlemler
+1. [Client Taraflı İşlemler](#adjust-client-side)
    1. [OAID için SDK'in Uygulamanıza İmplemente Edilmesi](#adjust-sdk)
    2. [Adjust.readOaid() Methodu ile OAID değerinin Adjust'a Bildirilmesi](#adjust-oaid-values)
    3. [Adjust.trackEvent() Methodu ile Olay Takibi](#track_event)
-2. Panel Taraflı İşlemler
-   1. [Adjust Panel'de Huawei Ads için Takipçi Oluşturulması](#create_follower)
+2. [Panel Taraflı İşlemler](#adjust-panel-side)
+   1. [Adjust Panel'de Huawei Ads için Takipçi Oluşturulması](#create_followers)
    2. [Click ve Impression URL'lerinin Oluşturulması](#click_impression)
    3. [Huawei Ads Panel'de Adjust için Ortalık Oluşturulması](#Huawei_ads)
    4. [SecretKey Değerinin Adjust Panel'e Girilmesi](#secretkey)
-   5. [Huawei Ads Panel'de Dönüşüm Takibi Oluşturulması](#conversion_tracking)
+   5. [Huawei Ads Panel'de Dönüşüm Takibi Oluşturulması](#Conversion_tracking)
    6. [Adjust Panel'de Dönüşümleri Takip Edecek Olayların Oluşturulması ve Linklenmesi](#event_linking)
    7. [Huawei Ads Panel'de Dönüşüm Takibi İçin Test İşlemlerinin Yapılması](#conversion_test)
 3. [Adjust Sıkca Sorulan Sorular](#adjust-sss)
@@ -77,7 +74,7 @@ HMS (Huawei Mobil Servisleri) kullanan tüm cihazlarda OAID kolay bir şekilde e
 
 </br>
 
-## **Client Taraflı İşlemler**
+## <a name="adjust-client-side"></a> **Client Taraflı İşlemler**
 <p>
 Adjust ve OAID işlemleri için öncelikle uygulama taraflı olan işlemleri tamamlamamız gerekmektedir. 
 
@@ -199,14 +196,14 @@ Adjust.trackEvent(adjustEvent)
 </p>
 
 
-## **Client Taraflı İşlemler**
+## <a name="adjust-panel-side"></a> **Panel Taraflı İşlemler**
 <p>
 Adjust ile Huawei Reklam Servisinin birlikte çalışabilmesi için hem Adjust hem de Huawei Ads Panellerinde bazı işlemler yapmamız gerekir. Öncelikle Adjust Panel taraflı işlemlerle başlayalım.
 </p>
 
 </br>
 
-## <a name="create followers"></a> **1.Adjust Panel'de Huawei Ads için Takipçi Oluşturulması**
+## <a name="create_followers"></a> **1.Adjust Panel'de Huawei Ads için Takipçi Oluşturulması**
 
 <p>
 Adjust Panel’e giriş yaptıktan sonra yeni bir takipçi oluşturalım ve bunu Huawei Ads olarak isimlendirelim. Bunun için;
@@ -224,7 +221,7 @@ Tracker URLs -> New Tracker -> Enter Tracker Name ‘e gidin ve “华为 广告
 
 </br>
 
-## <a name="click impression"></a> **2. Click ve Impression URL'lerinin Oluşturulması**
+## <a name="click_impression"></a> **2. Click ve Impression URL'lerinin Oluşturulması**
 
 <p>
 Ardından CUSTOMIZE -> CREATE ‘e tıklayın.
@@ -240,7 +237,7 @@ Not: Bu URL’leri Huawei Ads Platformuna eklenmek üzere not etmeyi lütfen unu
 
 </br>
 
-## <a name="Huawei Ads Panel"></a> **3.Huawei Ads Panel'de Adjust için Ortalık Oluşturulması**
+## <a name="Huawei_ads"></a> **3.Huawei Ads Panel'de Adjust için Ortalık Oluşturulması**
 
 <p>
 Huawei Ads Panel’e giriş yaptıktan sonra Adjust ile birlikte çalışacak alt yapıyı kurmak üzere bir ortaklık oluşturmakla başlayalım. Bunun için;
@@ -280,7 +277,7 @@ Submit işleminden sonra karşınıza gelen listede bulunan Key değerini Adjust
 
 </br>
 
-## <a name="Secretkey"></a> **4.SecretKey Değerinin Adjust Panel'e Girilmesi**
+## <a name="secretkey"></a> **4.SecretKey Değerinin Adjust Panel'e Girilmesi**
 
 <p>
 Adjust Panel’e geri dönelim ve Partner Setup -> Add Partner ‘e gittikten sonra Huawei Ads’i arayalım.
@@ -455,7 +452,7 @@ Burada gördüğünüz Ad-ID sizin OAID’inizdir.
 
 <p>
 
-[Genel soru cevap kısmı için;](#common-sss)
+[Genel soru cevap kısmı için](#common-sss)
 
 </p>
 
@@ -468,31 +465,30 @@ Burada gördüğünüz Ad-ID sizin OAID’inizdir.
 
 - https://medium.com/huawei-developers/adjust-third-party-tracking-integration-on-huawei-ads-platform-59a22dfdf033
 
-
-</br>
-</br>
-</br>
-
-<hr>
-
-</br>
-</br>
 </br>
 
 # **AppsFlyer**
+
+</br>
+
 ## <a name="appsflyer-client-side"></a> **Client Taraflı İşlemler**
+
 <p>
 AppsFlyer ve OAID işlemleri için öncelikle uygulama taraflı olan işlemleri tamamlamamız gerekmektedir. 
 
 Bu işlemler; SDK implemente etmek, test için fonksiyon oluşturmak gibi basit bir kaç adımda tamamlanmaktadır.
+   
 </p>
 
 <br>
 
 ## <a name="appsflyer-sdk"></a> **1. OAID için SDK'in Uygulamanıza İmplemente Edilmesi**
 
+
+<br>
+
 <p>
-project:build.gradle dosyanızda şu satırların olduğundan emin olunuz; 
+   <b>project:build.gradle</b> dosyanızda şu satırların olduğundan emin olunuz; 
 </p>
 
 ```kotlin
@@ -506,7 +502,7 @@ allprojects {
 ```
 <br>
 <p>
-app:build.gradle dosyanızda Appsflyer SDK bağımlılığının altında şu satırların  olduğundan emin olunuz;
+   <b>app:build.gradle</b> dosyanızda Appsflyer SDK bağımlılığının altında şu satırların  olduğundan emin olunuz;
 </p>
 
 ```kotlin
@@ -517,7 +513,7 @@ implementation 'com.huawei.hms:ads-identifier:3.4.39.302'
 <br>
 
 <p>
-Daha sonrasında Application sınıfının onCreate metodunda init ve start kodlarını, log dinleme işlemi için ise setDebugLog kodunu eklemelisiniz.
+   Daha sonrasında Application sınıfının onCreate metodunda <b>init</b> ve <b>start</b> kodlarını, log dinleme işlemi için ise <b>setDebugLog</b> kodunu eklemelisiniz.
 </p>
 <br>
 
@@ -535,7 +531,7 @@ Aşağıda bir örnek görebilirsiniz.
 
 <br>
 
-Java
+<b>Java</b>
 ```java
 import android.app.Application;
 import com.appsflyer.AppsFlyerLib;
@@ -553,7 +549,7 @@ public class AFApplication extends Application {
     // ...
 }
 ```
-Kotlin
+<b>Kotlin</b>
 ```kotlin
 import android.app.Application
 import com.appsflyer.AppsFlyerLib
@@ -577,20 +573,19 @@ class AFApplication : Application() {
 <p>
 Bu aşamada, eğer AppsFlyer SDK versiyonunuz <b>6.2.3</b> ya da üzeri ise, cihazın OAID verisini elde etmek için yapmanız gereken ek bir işlem yoktur. Fakat daha düşük bir SDK versiyonu kullanıyorsanız aşağıdaki kod satırını da Application sınıfının onCreate metoduna eklemelisiniz.
 </p>
+
 <br>
 
 ```kotlin
 AppsFlyerLib.getInstance().setCollectOaid(true)
 ```
 <br>
+
 <p>
-Tüm bu işlemlerin doğru bir şekilde yapılıp yapılamadığını test edebilmek için bir log dinleme işlemi var. İşlemler doğru yapıldıysa Android Studio’da Logcat’i Verbose seviyesine getirip “oaid” olarak filtreleme yapıldığında, aşağıdaki gibi bir log görmelisiniz. “get oaid from:” kısmından sonra uygulamanızın paket adı gelmektedir.
+Tüm bu işlemlerin doğru bir şekilde yapılıp yapılamadığını test edebilmek için bir log dinleme işlemi var. İşlemler doğru yapıldıysa Android Studio’da Logcat’i Verbose seviyesine getirip <b>“oaid”</b> olarak filtreleme yapıldığında, aşağıdaki gibi bir log görmelisiniz. <b>“get oaid from:”</b> kısmından sonra uygulamanızın paket adı gelmektedir.
 </p>
-<br>
 
 ![AppsFlyer Log](/assets/appsflyer_log.png "AppsFlyer -> Log")
-
-<br>
 
 ## <a name="appsflyer-track-event"></a> **3. trackEvent() Methodu ile Olay Takibi**
 
@@ -599,7 +594,7 @@ Uygulama içerisinde yapmamız gereken bir diğer önemli işlem ise; AppsFlyer 
 </p>
 <br>
 
-Java
+<b>Java</b>
 ```java
       Map<String, Object> eventValues = new HasMap<>();
       eventValues.put(AFInAppEventParameterName.REVENUE, 1.99);
@@ -608,7 +603,7 @@ Java
 ```
 
 
-Kotlin
+<b>Kotlin</b>
 ```kotlin
 val eventValues: MutableMap<String, Any> = HasMap()
         eventValues[AFInAppEventParameterName.REVENUE] = 1.99
@@ -628,14 +623,12 @@ Client tarafındaki işlemler tamamlandıktan sonra sırada iki panelin de birbi
 
 <p>
 AppsFlyer Panel’e giriş yaptıktan sonra yeni bir takipçi oluşturalım ve bunu Huawei Ads olarak isimlendirelim. Bunun için; <br>
-AF integrated Partners -->  Huawei Ads Global --> Integration 
+   <b>AF integrated Partners ➡  Huawei Ads Global ➡ Integration</b>
 </p>
 
 <br>
 
 ![AppsFlyer Tracker](/assets/appsflyer_tracker.png "AppsFlyer -> Tracker")
-
-<br>
 
 <br>
 
@@ -650,17 +643,16 @@ Huawei Ads ve AppsFlyer panellerinin birbirleriyle iletişim halinde olabilmeler
 <br>
 
 <p>
-Configuration --> Integreted Partners --> Attribution Link adımları takip edilerek Click ve Impression URL'ler oluşturulabilir.
+   <b>Configuration ➡ Integreted Partners ➡ Attribution Link</b> adımları takip edilerek <b>Click</b> ve <b>Impression</b> URL'ler oluşturulabilir.
 </p>
 
 <br>
-
 
 ## <a name="appsflyer-huawei-partner"></a> **3. Huawei Ads Panel'de AppsFlyer için Ortalık Oluşturulması**
 <p>
 Daha sonrasında oluşturulan Click ve Impression URL’ler Huawei Ads paneline eklenmelidir. Bunun için;
 
-Tools --> Delivery assistance --> Associated tool menüsüne gidin ve New’e tıklayın.
+<b>Tools ➡ Delivery assistance ➡ Associated tool</b> menüsüne gidin ve <b>New</b>’e tıklayın.
 </p>
 
 <br>
@@ -668,7 +660,7 @@ Tools --> Delivery assistance --> Associated tool menüsüne gidin ve New’e t�
 ![AppsFlyer HAP Associated](/assets/hap_associated.png "AppsFlyer -> HAP Associated")
 
 <p>
- Tool provider kısmında AppsFlyer, App kısmında ise uygulamanız seçilmelidir.
+ <b>Tool provider kısmında AppsFlyer, App kısmında ise uygulamanız seçilmelidir.</b>
  </p>
 
 <br>
@@ -685,10 +677,14 @@ Tools --> Delivery assistance --> Associated tool menüsüne gidin ve New’e t�
 Huawei Ads paneline bu veriler girildikten sonra bir adet <b>KEY</b> değeri elde ediceksiniz.
 </p>
 
+<br>
+
 ![AppsFlyer Secret Key](/assets/appsflyer_secret_key.png "AppsFlyer -> Huawei Secret Key")
 
+<br>
+
 <p>
-Bu KEY değerini alıp AppsFlyer paneline girmelisiniz.
+   Bu <b>KEY</b> değerini alıp AppsFlyer paneline girmelisiniz.
 </p>
 
 <br>
@@ -704,7 +700,7 @@ Bu KEY değerini alıp AppsFlyer paneline girmelisiniz.
 <p>
 Bu işlemlerin ardından paneller arasındaki işlemler bitmiş olup, takip ve analiz edilmesi istenen dönüşüm aksiyonlarını hem Huawei Ads Paneline hem de Adjust paneline tanımlamamız gerekiyor. Öncelikle Huawei Ads Paneline geçelim;
 
-Tools--> Delivery assistance --> Conversion tracking menüsünde bulunan New conversion’a tıklayalım.
+<b>Tools ➡ Delivery assistance ➡ Conversion tracking</b> menüsünde bulunan New conversion’a tıklayalım.
 Önce App tracking’i sonra Analysis tool’u seçelim ve Contiune butonuna tıklayarak devam edelim.
 Karşımıza çıkacak olan formu doldurarak takip etmek istediğimiz aksiyonlar için dönüşüm oluşturalım.
 
@@ -713,8 +709,6 @@ Karşımıza çıkacak olan formu doldurarak takip etmek istediğimiz aksiyonlar
 <br>
 
 ![AppsFlyer Huawei Conversion](/assets/appsflyer_huawei_conversion.png "AppsFlyer -> AppsFlyer Huawei Conversio")
-
-<br>
 
 <p>
 <b>App:</b> Takip etmek istediğiniz uygulamanızı seçiniz.
@@ -758,7 +752,7 @@ Kampanyaya başlayabilmeniz için Huawei Ads tarafına eklenen conversion'ların
 ![AppsFlyer Unactivate](/assets/appsflyer_unactivate.png "AppsFlyer -> Unactivate")
 
 <p>
-Bunun için öncelikle sağ tarafta bulunan “Test” butonuna tıklayınız.
+   <b>Bunun için öncelikle sağ tarafta bulunan “Test” butonuna tıklayınız.</b>
 </p>
 
 <br>
@@ -766,7 +760,7 @@ Bunun için öncelikle sağ tarafta bulunan “Test” butonuna tıklayınız.
 ![AppsFlyer Test](/assets/appsflyer_test.png "AppsFlyer -> Test")
 
 <p>
-Daha sonrasında açılan panele test yapılacak cihazın OAID verisi girilmelidir.
+   <b>Daha sonrasında açılan panele test yapılacak cihazın OAID verisi girilmelidir.</b>
 </p>
 
 <br>
@@ -776,7 +770,7 @@ Daha sonrasında açılan panele test yapılacak cihazın OAID verisi girilmelid
 <br>
 
 <p>
-Cihazının OAID verisini şu şekilde öğrenebilirsiniz. Privacy --> Ads and Privacy --> More Information --> Your Ad-ID
+<b>Cihazınızın OAID verisini şu şekilde öğrenebilirsiniz. Privacy ➡ Ads and Privacy ➡ More Information ➡ Your Ad-ID</b>
 </br>
 
 ![AppsFlyer Get OAID from Device](/assets/huawei_device_oaid.png "AppsFlyer -> Get OAID from Device")
@@ -784,7 +778,7 @@ Cihazının OAID verisini şu şekilde öğrenebilirsiniz. Privacy --> Ads and P
 <br>
 
 <p>
-OAID verisi girildikten sonra karşınıza gelen karekod ile uygulamayı indirmeniz gerekmektedir.
+   <b>OAID verisi girildikten sonra karşınıza gelen karekod ile uygulamayı indirmeniz gerekmektedir.</b>
 </p>
 
 ![AppsFlyer QR Kod](/assets/hap_scan_qr_code.png "AppsFlyer -> QR Kod")
@@ -792,7 +786,7 @@ OAID verisi girildikten sonra karşınıza gelen karekod ile uygulamayı indirme
 <br>
 
 <p>
-Daha sonrasında ise test edilen conversion hangisi ise o işlemin gerçekleştirilmesi gerekmektedir. Örnek vermek gerekirse register conversion'ı test ediliyorsa uygulamayı indirdikten sonra çalıştırıp, register işleminin gerçekleştirilmesi gerekmektedir.
+<b>Daha sonrasında ise test edilen conversion hangisi ise o işlemin gerçekleştirilmesi gerekmektedir. Örnek vermek gerekirse register conversion'ı test ediliyorsa uygulamayı indirdikten sonra çalıştırıp, register işleminin gerçekleştirilmesi gerekmektedir.</b>
 </p>
 
 <br>
@@ -802,7 +796,7 @@ Daha sonrasında ise test edilen conversion hangisi ise o işlemin gerçekleşti
 <br>
 
 <p>
-Test işlemi başarılı olduktan sonra Huawei Ads panelinde conversion'ın artık aktif durumda olduğunu göreceksiniz. Bu aşamadan sonra teknik işlemler bitmiş olup, kampanyanıza başlayabilirsiniz.
+<b>Test işlemi başarılı olduktan sonra Huawei Ads panelinde conversion'ın artık aktif durumda olduğunu göreceksiniz. Bu aşamadan sonra teknik işlemler bitmiş olup, kampanyanıza başlayabilirsiniz.</b>
 </p>
 
 <br>
@@ -867,7 +861,7 @@ Test işlemi başarılı olduktan sonra Huawei Ads panelinde conversion'ın art�
 
 <p>
 
-[Genel soru cevap kısmı için;](#common-sss)
+[Genel soru cevap kısmı için](#common-sss)
 
 </p>
 
