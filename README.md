@@ -630,7 +630,7 @@ Client tarafındaki işlemler tamamlandıktan sonra sırada iki panelin de birbi
 
 <p>
 AppsFlyer Panel’e giriş yaptıktan sonra yeni bir takipçi oluşturalım ve bunu Huawei Ads olarak isimlendirelim. Bunun için; <br>
-   <b>AF integrated Partners ➡  Huawei Ads Global ➡ Integration</b>
+   <b>AF integrated Partners > Huawei Ads Global > Integration</b>
 </p>
 
 <br>
@@ -650,7 +650,7 @@ Huawei Ads ve AppsFlyer panellerinin birbirleriyle iletişim halinde olabilmeler
 <br>
 
 <p>
-   <b>Configuration ➡ Integreted Partners ➡ Attribution Link</b> adımları takip edilerek <b>Click</b> ve <b>Impression</b> URL'ler oluşturulabilir.
+   <b>Configuration > Integreted Partners > Attribution Link</b> adımları takip edilerek <b>Click</b> ve <b>Impression</b> URL'ler oluşturulabilir.
 </p>
 
 <br>
@@ -659,7 +659,7 @@ Huawei Ads ve AppsFlyer panellerinin birbirleriyle iletişim halinde olabilmeler
 <p>
 Daha sonrasında oluşturulan Click ve Impression URL’ler Huawei Ads paneline eklenmelidir. Bunun için;
 
-<b>Tools ➡ Delivery assistance ➡ Associated tool</b> menüsüne gidin ve <b>New</b>’e tıklayın.
+<b>Tools > Delivery assistance > Associated tool</b> menüsüne gidin ve <b>New</b>’e tıklayın.
 </p>
 
 <br>
@@ -707,7 +707,7 @@ Huawei Ads paneline bu veriler girildikten sonra bir adet <b>KEY</b> değeri eld
 <p>
 Bu işlemlerin ardından paneller arasındaki işlemler bitmiş olup, takip ve analiz edilmesi istenen dönüşüm aksiyonlarını hem Huawei Ads Paneline hem de Adjust paneline tanımlamamız gerekiyor. Öncelikle Huawei Ads Paneline geçelim;
 
-<b>Tools ➡ Delivery assistance ➡ Conversion tracking</b> menüsünde bulunan New conversion’a tıklayalım.
+<b>Tools > Delivery assistance > Conversion tracking</b> menüsünde bulunan New conversion’a tıklayalım.
 Önce App tracking’i sonra Analysis tool’u seçelim ve Contiune butonuna tıklayarak devam edelim.
 Karşımıza çıkacak olan formu doldurarak takip etmek istediğimiz aksiyonlar için dönüşüm oluşturalım.
 
@@ -777,7 +777,7 @@ Kampanyaya başlayabilmeniz için Huawei Ads tarafına eklenen conversion'ların
 <br>
 
 <p>
-<b>Cihazınızın OAID verisini şu şekilde öğrenebilirsiniz. Privacy ➡ Ads and Privacy ➡ More Information ➡ Your Ad-ID</b>
+<b>Cihazınızın OAID verisini şu şekilde öğrenebilirsiniz. Privacy > Ads and Privacy > More Information > Your Ad-ID</b>
 </br>
 
 ![AppsFlyer Get OAID from Device](/assets/huawei_device_oaid.png "AppsFlyer -> Get OAID from Device")
