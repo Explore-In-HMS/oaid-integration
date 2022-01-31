@@ -86,7 +86,7 @@ Bu işlemler; SDK implemente etmek, test için fonksiyon oluşturmak gibi basit 
 ## <a name="adjust-sdk"></a> **1. OAID için SDK'in Uygulamanıza İmplemente Edilmesi**
 
 <p>
-app:build.gradle dosyanızda Adjust SDK bağımlılığının altına şu implementation satırını eklemelisiniz; 
+<b>app:build.gradle</b> dosyanızda Adjust SDK bağımlılığının altına şu implementation satırını eklemelisiniz; 
 
 ```
 implementation 'com.adjust.sdk:adjust-android:4.28.8'
@@ -103,7 +103,7 @@ implementation 'com.adjust.sdk:adjust-android-oaid:4.28.8'
 ## <a name ="adjust-oaid-values"></a> **2.Adjust.readOaid() Methodu ile OAID değerinin Adjust'a Bildirilmesi**
 
 <p>
-Uygulamanızda Adjust.onCreate(config) ile SDK işlemlerini başlattığınız satırın üstüne OAID değerini okumak için olan şu satırı eklemelisiniz;
+Uygulamanızda <b>Adjust.onCreate(config)</b> ile SDK işlemlerini başlattığınız satırın üstüne OAID değerini okumak için olan şu satırı eklemelisiniz;
 
 ```
 AdjustOaid.readOaid(applicationContext)
@@ -158,7 +158,7 @@ Adjust.onCreate(config)
 </br>
 
 <p>
-LogCat penceresinde Verbose seviyesindeki logları dinleyip, «oaid» şeklinde filtreleme yaptığınızda;
+LogCat penceresinde <b>Verbose</b> seviyesindeki logları dinleyip, <b>«oaid»</b> şeklinde filtreleme yaptığınızda;
 
 ```
 get oaid from:{package-name}
@@ -195,6 +195,7 @@ Adjust.trackEvent(adjustEvent)
 ```
 </p>
 
+</br>
 
 ## <a name="adjust-panel-side"></a> **Panel Taraflı İşlemler**
 <p>
@@ -212,7 +213,7 @@ Adjust Panel’e giriş yaptıktan sonra yeni bir takipçi oluşturalım ve bunu
 </br>
 
 <p>
-Tracker URLs -> New Tracker -> Enter Tracker Name ‘e gidin ve “华为 广告 | Huawei Ads“ olarak isimlendirin.
+<b>Tracker URLs > New Tracker > Enter Tracker Name</b> ‘e gidin ve <b>“华为 广告 | Huawei Ads“</b> olarak isimlendirin.
 
 </br>
 
@@ -224,11 +225,11 @@ Tracker URLs -> New Tracker -> Enter Tracker Name ‘e gidin ve “华为 广告
 ## <a name="click_impression"></a> **2. Click ve Impression URL'lerinin Oluşturulması**
 
 <p>
-Ardından CUSTOMIZE -> CREATE ‘e tıklayın.
+Ardından <b>CUSTOMIZE > CREATE</b> ‘e tıklayın.
 
 Click ve Impression URL’leri sırasıyla oluşacaktır.
 
-Not: Bu URL’leri Huawei Ads Platformuna eklenmek üzere not etmeyi lütfen unutmayın.
+<b>Not: Bu URL’leri Huawei Ads Platformuna eklenmek üzere not etmeyi lütfen unutmayın.</b>
 
 </br>
 
@@ -242,7 +243,7 @@ Not: Bu URL’leri Huawei Ads Platformuna eklenmek üzere not etmeyi lütfen unu
 <p>
 Huawei Ads Panel’e giriş yaptıktan sonra Adjust ile birlikte çalışacak alt yapıyı kurmak üzere bir ortaklık oluşturmakla başlayalım. Bunun için;
 
-Tools > Delivery assistance > Associated tool menüsüne gidin ve New’e tıklayın.
+<b>Tools > Delivery assistance > Associated tool</b> menüsüne gidin ve New’e tıklayın.
 
 </br>
 
@@ -254,11 +255,11 @@ Tools > Delivery assistance > Associated tool menüsüne gidin ve New’e tıkla
 <p>
 Açılan sayfada;
 
-   -Tool provider olarak Adjust’ı,
+   - Tool provider olarak Adjust’ı,
 
-   -App olarak ilgili uygulamanızı seçiniz.
+   - App olarak ilgili uygulamanızı seçiniz.
 
-   -Impression tracking URL ve Click tracking URL alanlarını Adjust Panelden aldığınız URL’ler ile doldurun ve Submit butonuna tıklayın.
+   - Impression tracking URL ve Click tracking URL alanlarını Adjust Panelden aldığınız URL’ler ile doldurun ve <b>Submit</b> butonuna tıklayın.
 
 ![Huawei_ads](assets/hap_associated_2.png "Adjust -> huawei ads panel")
 
@@ -280,9 +281,9 @@ Submit işleminden sonra karşınıza gelen listede bulunan Key değerini Adjust
 ## <a name="secretkey"></a> **4.SecretKey Değerinin Adjust Panel'e Girilmesi**
 
 <p>
-Adjust Panel’e geri dönelim ve Partner Setup -> Add Partner ‘e gittikten sonra Huawei Ads’i arayalım.
+Adjust Panel’e geri dönelim ve <b>Partner Setup > Add Partner</b> ‘e gittikten sonra Huawei Ads’i arayalım.
 
-Uygulama platformu doğru şekilde seçtikten sonra SECRETKEY alanına bir önceki aşamada aldığımız Key’i girip Save butonuna tıklayalım.
+Uygulama platformu doğru şekilde seçtikten sonra <b>SECRETKEY</b> alanına bir önceki aşamada aldığımız Key’i girip Save butonuna tıklayalım.
 
 </br>
 
@@ -296,11 +297,11 @@ Uygulama platformu doğru şekilde seçtikten sonra SECRETKEY alanına bir önce
 <p>
 Takip ve analiz edilmesi istenen dönüşüm aksiyonlarını hem Huawei Ads Paneline hem de Adjust paneline tanımlamamız gerekiyor. Öncelikle Huawei Ads Paneline geçelim;
 
-   -Tools > Delivery assistance > Conversion tracking menüsünde bulunan New conversion’a tıklayalım.
+   - <b>Tools > Delivery assistance > Conversion tracking</b> menüsünde bulunan New conversion’a tıklayalım.
 
-   -Önce App tracking’i sonra Analysis tool’u seçelim ve Contiune butonuna tıklayarak devam edelim.
+   - Önce App tracking’i sonra Analysis tool’u seçelim ve <b>Contiune</b> butonuna tıklayarak devam edelim.
 
-   -Karşımıza çıkacak olan formu doldurarak takip etmek istediğimiz aksiyonlar için dönüşüm oluşturalım.
+   - Karşımıza çıkacak olan formu doldurarak takip etmek istediğimiz aksiyonlar için dönüşüm oluşturalım.
 
    </br>
 
@@ -311,17 +312,18 @@ Takip ve analiz edilmesi istenen dönüşüm aksiyonlarını hem Huawei Ads Pane
 </br>
 
 <p>
-   -App: Takip etmek istediğiniz uygulamanızı seçiniz.
 
-   -Conversion actions: Hangi konularda dönüşüm aksiyonları almak istediğinizi seçin.
+   - <b>App:</b> Takip etmek istediğiniz uygulamanızı seçiniz.
 
-   -Conversion name: Oluşturmak üzere olduğunu dönüşüme kolay anlaşılabilir bir isim verin.
+   - <b>Conversion actions:</b> Hangi konularda dönüşüm aksiyonları almak istediğinizi seçin.
 
-   -Click attribution window: Reklam tıklandıktan ve dönüşüm oluşturulduktan sonraki periyottur. Varsayılan değeri 30 gündür ve bu değer Submit işleminden sonra değiştirilemez.
+   - <b>Conversion name:</b> Oluşturmak üzere olduğunu dönüşüme kolay anlaşılabilir bir isim verin.
 
-   -Display attribution window: Dönüşümün başlatılmasını sağlayan reklam izlenimi sonrası periyottur. Varsayılan değeri 1 gündür ve bu değer Submit işleminden sonra değiştirilemez.
+   - <b>Click attribution window:</b> Reklam tıklandıktan ve dönüşüm oluşturulduktan sonraki periyottur. Varsayılan değeri 30 gündür ve bu değer Submit işleminden sonra değiştirilemez.
 
-   -Including Conversion Num: Dönüşüm aksiyonları için tanımladığınız her bir aksiyon için sayaç değeri tanımlayabilirsiniz. Örneğin uygulamanızda sepete ekleme işlemi 3, satın alma işlemi 2 kez gerçekleştiyse Conversion Num değeri size 5 olarak dönecektir.
+   - <b>Display attribution window:</b> Dönüşümün başlatılmasını sağlayan reklam izlenimi sonrası periyottur. Varsayılan değeri 1 gündür ve bu değer Submit işleminden sonra değiştirilemez.
+
+   - <b>Including Conversion Num:</b> Dönüşüm aksiyonları için tanımladığınız her bir aksiyon için sayaç değeri tanımlayabilirsiniz. Örneğin uygulamanızda sepete ekleme işlemi 3, satın alma işlemi 2 kez gerçekleştiyse Conversion Num değeri size 5 olarak dönecektir.
 </p>
 
 </br>
@@ -341,7 +343,7 @@ https://developer.huawei.com/consumer/en/doc/distribution/promotion/tracking-shu
 </br>
 
 <p>
-Eklediğiniz her Conversion için Status sütunu altında «Unactivated» durumunu göreceksiniz. Bu durum şu an için normaldir, aktivasyon işlemine ilerleyen aşamalarda başlamış olacağız.
+Eklediğiniz her Conversion için Status sütunu altında <b>«Unactivated»</b> durumunu göreceksiniz. Bu durum şu an için normaldir, aktivasyon işlemine ilerleyen aşamalarda başlamış olacağız.
 
 </br>
 
@@ -355,7 +357,7 @@ Eklediğiniz her Conversion için Status sütunu altında «Unactivated» durumu
 <p>
 Huawei Ads Panel’e eklenen dönüşüm aksiyonlarının Adjust Panel’ine de eklenmesi gerekmektedir.
 
-Bunun için Adjust Panel’e geri dönmeli ve Partner Setup -> Add Partner alanında “华为广告 | HUAWEI Ads” i bulup seçmeliyiz ve aksiyonları birbirine eşitlemek için Event Linking alanını kullanmalıyız.
+Bunun için Adjust Panel’e geri dönmeli ve <b>Partner Setup > Add Partner</b> alanında <b>“华为广告 | HUAWEI Ads”</b> i bulup seçmeliyiz ve aksiyonları birbirine eşitlemek için Event Linking alanını kullanmalıyız.
 
 </br>
 
@@ -363,9 +365,9 @@ Bunun için Adjust Panel’e geri dönmeli ve Partner Setup -> Add Partner alan�
 
 </br>
 
-Not: Adjust «Install» olayını otomatik eklediği için sizin ayrıca eklemeniz gerekmez.
+<b>Not: Adjust «Install» olayını otomatik eklediği için sizin ayrıca eklemeniz gerekmez.</b>
 
-Not 2: Adjust tarafındaki «Install» olayı Huawei Ads Panel tarafındaki «Activation» olayına karşılık gelmektedir.
+<b>Not 2: Adjust tarafındaki «Install» olayı Huawei Ads Panel tarafındaki «Activation» olayına karşılık gelmektedir.</b>
 
 </p>
 
@@ -395,7 +397,7 @@ Açılan ekranda sizden test etmek istediğiniz cihazın OAID değerini girmeniz
 
 Bu değeri Huawei cihazınızda şu yolu takip ederek bulabilirsiniz;
 
-Privacy -> Ads and Privacy -> More information
+<b>Privacy > Ads and Privacy > More information</b>
 
 </br>
 
@@ -437,7 +439,7 @@ Burada gördüğünüz Ad-ID sizin OAID’inizdir.
 <p>
 - Huawei Ads Panel ile Adjust Panel’deki Install sayıları birbirini neden tutmuyor?
 
-+ Adjust Panel’de ki “install” sayılarını Huawei Ads Panel’de ki “activation” alanı ile karşılaştırmamız gerekmektedir.
++ Adjust Panel’de ki <b>“install”</b> sayılarını Huawei Ads Panel’de ki <b>“activation”</b> alanı ile karşılaştırmamız gerekmektedir.
 </p>
 
 </br>
