@@ -105,6 +105,8 @@ implementation 'com.adjust.sdk:adjust-android-oaid:4.28.8'
 <p>
 Uygulamanızda Adjust.onCreate(config) ile SDK işlemlerini başlattığınız satırın üstüne OAID değerini okumak için olan şu satırı eklemelisiniz;
 
+</br>
+
 ```
 AdjustOaid.readOaid(applicationContext)
 Adjust.onCreate(config)
@@ -121,6 +123,7 @@ Adjust.onCreate(config)
 Adjust’ın sağladığı SDK ile OAID değerini doğru şekilde aldığınızı kontrol etmelisiniz. Bunun için şu kodları kullanıp;
 
 Java
+
 ```java
 Context context = applicationContext;
 String appToken = «{your token}»;
@@ -182,6 +185,8 @@ Uygulama içerisinde yapmamız gereken bir diğer önemli işlem ise; Adjust Pan
 </br>
 
 ![Track Event](assets/adjust_events_token.png "Adjust -> Track Event")
+
+</br>
 
 Java
 ```java
@@ -332,6 +337,8 @@ Conversion actions tablosu:
 </br>
 
 ![conversion_tracking ](assets/hap_conversion_table.png "Adjust -> conversion_tracking ")
+
+</br>
 
 Tümü için bakınız;
 https://developer.huawei.com/consumer/en/doc/distribution/promotion/tracking-shu-0000001139892541#EN-US_TOPIC_0000001139892541__table10838115914391 
