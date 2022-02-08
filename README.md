@@ -89,12 +89,12 @@ Bu işlemler; SDK implemente etmek, test için fonksiyon oluşturmak gibi basit 
 <b>app:build.gradle</b> dosyanızda Adjust SDK bağımlılığının altına şu implementation satırını eklemelisiniz; 
 
 ```
-implementation 'com.adjust.sdk:adjust-android:4.28.8'
-implementation 'com.adjust.sdk:adjust-android-oaid:4.28.8'
+dependencies{
+   ...
+   implementation 'com.adjust.sdk:adjust-android:4.28.9'
+   implementation 'com.adjust.sdk:adjust-android-oaid:4.28.9'
+}
 ```
-</br>
-
-![Adjust Dependiencies](/assets/dependencies.png "Adjust -> Dependiencies")
 
 </p>
 
@@ -107,13 +107,10 @@ Uygulamanızda <b>Adjust.onCreate(config)</b> ile SDK işlemlerini başlattığ�
 
 </br>
 
-```
+```kotlin
 AdjustOaid.readOaid(applicationContext)
 Adjust.onCreate(config)
 ```
-</br>
-
-![OAID Values](assets/kotlin.png "Adjust -> OAID Values")
 
 </p>
 
@@ -468,9 +465,11 @@ Burada gördüğünüz Ad-ID sizin OAID’inizdir.
 
 ## <a name="reference"></a> **Kaynakça**
 
+- https://github.com/adjust/android_sdk/blob/master/doc/english/plugins/oaid.md
+
 - https://developer.huawei.com/consumer/en/doc/distribution/promotion/adjust-0000001121931660
 
-- https://communityfile-drcn.op.hicloud.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20211105162608.10019916987154665361718259636409:50521104095720:2800:A6389AB960E92C4729F82F551C21AE42C2FC9879D901B5F4A1CEE28DED1B1A77.pdf?needInitFileName=true
+- [Adjust operation guide.pdf](assets/Adjust%20operation%20guide.pdf)
 
 - https://medium.com/huawei-developers/adjust-third-party-tracking-integration-on-huawei-ads-platform-59a22dfdf033
 
@@ -503,7 +502,7 @@ Bu işlemler; SDK implemente etmek, test için fonksiyon oluşturmak gibi basit 
 ```kotlin
 allprojects {
   repositories {
-  // ...
+    //...
     maven { url 'https://developer.huawei.com/repo/' }
     mavenCentral()
   }
@@ -515,9 +514,12 @@ allprojects {
 </p>
 
 ```kotlin
-implementation 'com.appsflyer:af-android-sdk:6.2.3@aar'
-implementation 'com.appsflyer:oaid:6.2.4'
-implementation 'com.huawei.hms:ads-identifier:3.4.39.302'
+dependencies{
+   //...
+   implementation 'com.appsflyer:af-android-sdk:6.2.3@aar'
+   implementation 'com.appsflyer:oaid:6.2.4'
+   implementation 'com.huawei.hms:ads-identifier:3.4.39.302'
+}
 ```
 <br>
 
