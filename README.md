@@ -7,12 +7,12 @@ OAID ile üçüncü parti takip platformları entegrasyonu ve panel işlemleri i
 
 </br>
 
-### **Üçüncü Parti Takip Platrformu Nedir?**
+### **Üçüncü Parti Takip Platformu Nedir?**
 
 <p>
 Bir şirket (kampanya, tanıtım, duyuru vb. gibi) pazarlama işlemleri için reklam yayınladığında, bütçesini en iyi şekilde yönetmek için kullanıcıların bu reklam ile nasıl etkileşime geçtiğini (örn: reklama kaç kullanıcı tıkladı, kaç kullanıcı reklamdan gelerek uygulamayı indirdi, kaç kullanıcı reklamdan gelerek ürün satın aldı vb. ) detaylarıyla görmek ister. Bu, kullanıcı ve kullanıcı davranışlarının takibinin baz alındığı bir dizi işlemleri gerektirir.
 
-Adjust, AppsFlyer, Kochava, Sizmek gibi platformlar bu konuda hizmet vermektedir.
+Adjust, AppsFlyer gibi platformlar bu konuda hizmet vermektedir.
 </p>
 
 </br>
