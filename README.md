@@ -455,6 +455,15 @@ Burada gördüğünüz Ad-ID sizin OAID’inizdir.
 
 </p>
 
+<p>
+- Aynı cihazla, aynı uygulamayı birden fazla kez test ederken nelere dikkat etmeliyim?
+
+Adjust Testing Console'da OAID ile filtremele yaptığınız zaman HMS cihazdan isteğin gelmiş olduğunu fakat "install_time" veya "tracker_name" gibi değerlerin yanlış olduğunu görüyorsanız 
+ilgili OAID 'e sahip cihazı Adjust veritabanınından tamamen silmeniz gerekebilir bunun için; Testing Console'da filtreme yaptıktan sonra "Forget Device" butonuna basabilirsiniz;
+
+![Huawei_ads](assets/adjust_forget_device.png "Adjust -> Forget Device")
+</p>
+
 
 <p>
 
